@@ -14,6 +14,12 @@
 		D444832B2AB46FBF006BD7D2 /* StatusScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444832A2AB46FBF006BD7D2 /* StatusScreenTests.swift */; };
 		D44483352AB46FBF006BD7D2 /* StatusScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44483342AB46FBF006BD7D2 /* StatusScreenUITests.swift */; };
 		D44483372AB46FBF006BD7D2 /* StatusScreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44483362AB46FBF006BD7D2 /* StatusScreenUITestsLaunchTests.swift */; };
+		D44483482AB46FF4006BD7D2 /* StatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44483472AB46FF4006BD7D2 /* StatusManager.swift */; };
+		D444834A2AB4700C006BD7D2 /* InfoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44483492AB4700C006BD7D2 /* InfoTextView.swift */; };
+		D444834C2AB47084006BD7D2 /* MyStatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444834B2AB47084006BD7D2 /* MyStatusCardView.swift */; };
+		D444834E2AB4718D006BD7D2 /* StatusCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444834D2AB4718D006BD7D2 /* StatusCardView.swift */; };
+		D44483502AB472D5006BD7D2 /* StatusListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D444834F2AB472D5006BD7D2 /* StatusListView.swift */; };
+		D44483522AB47335006BD7D2 /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D44483512AB47335006BD7D2 /* StatusView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		D44483302AB46FBF006BD7D2 /* StatusScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StatusScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D44483342AB46FBF006BD7D2 /* StatusScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenUITests.swift; sourceTree = "<group>"; };
 		D44483362AB46FBF006BD7D2 /* StatusScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D44483472AB46FF4006BD7D2 /* StatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusManager.swift; sourceTree = "<group>"; };
+		D44483492AB4700C006BD7D2 /* InfoTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTextView.swift; sourceTree = "<group>"; };
+		D444834B2AB47084006BD7D2 /* MyStatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatusCardView.swift; sourceTree = "<group>"; };
+		D444834D2AB4718D006BD7D2 /* StatusCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCardView.swift; sourceTree = "<group>"; };
+		D444834F2AB472D5006BD7D2 /* StatusListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusListView.swift; sourceTree = "<group>"; };
+		D44483512AB47335006BD7D2 /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +106,10 @@
 		D44483182AB46FBE006BD7D2 /* StatusScreen */ = {
 			isa = PBXGroup;
 			children = (
+				D44483462AB46FE7006BD7D2 /* Model */,
+				D44483452AB46FE3006BD7D2 /* View */,
 				D44483192AB46FBE006BD7D2 /* StatusScreenApp.swift */,
+				D44483512AB47335006BD7D2 /* StatusView.swift */,
 				D444831B2AB46FBE006BD7D2 /* ContentView.swift */,
 				D444831D2AB46FBE006BD7D2 /* Assets.xcassets */,
 				D444831F2AB46FBE006BD7D2 /* Preview Content */,
@@ -125,6 +140,25 @@
 				D44483362AB46FBF006BD7D2 /* StatusScreenUITestsLaunchTests.swift */,
 			);
 			path = StatusScreenUITests;
+			sourceTree = "<group>";
+		};
+		D44483452AB46FE3006BD7D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D44483492AB4700C006BD7D2 /* InfoTextView.swift */,
+				D444834B2AB47084006BD7D2 /* MyStatusCardView.swift */,
+				D444834D2AB4718D006BD7D2 /* StatusCardView.swift */,
+				D444834F2AB472D5006BD7D2 /* StatusListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D44483462AB46FE7006BD7D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D44483472AB46FF4006BD7D2 /* StatusManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D444834E2AB4718D006BD7D2 /* StatusCardView.swift in Sources */,
 				D444831C2AB46FBE006BD7D2 /* ContentView.swift in Sources */,
+				D44483522AB47335006BD7D2 /* StatusView.swift in Sources */,
+				D444834C2AB47084006BD7D2 /* MyStatusCardView.swift in Sources */,
+				D444834A2AB4700C006BD7D2 /* InfoTextView.swift in Sources */,
+				D44483502AB472D5006BD7D2 /* StatusListView.swift in Sources */,
+				D44483482AB46FF4006BD7D2 /* StatusManager.swift in Sources */,
 				D444831A2AB46FBE006BD7D2 /* StatusScreenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
